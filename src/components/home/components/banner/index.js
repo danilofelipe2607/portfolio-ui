@@ -18,18 +18,18 @@ export default function Banner() {
 
   return (
     <div className="container-banner">
-      {" "}
       <h1>
         Tudo na vida passa... tudo o tempo resolve... ficam só as recordações...{" "}
       </h1>
       <div className="container-iframe">
-        {" "}
         <iframe
-          className="iframe-banner"
           frameBorder="false"
-          src="https://www.youtube.com/embed/w39_DAZHFVA"
+          className="iframe-banner"
+          src="https://www.youtube.com/embed/4NMjhgFMmCk"
           title="YouTube video player"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         ></iframe>
       </div>
     </div>
