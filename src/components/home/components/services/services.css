@@ -1,5 +1,4 @@
 .container-services {
-  background: red;
   width: 100%;
 }
 
@@ -15,18 +14,14 @@
   margin-bottom: 25px;
   margin-right: 10%;
   margin-left: 10%;
-  background: yellow;
 }
 
 .service-item-main {
-  background: palevioletred;
-
   grid-row-start: 1;
   grid-row-end: 3;
 }
 .service-item-main {
   height: 100%;
-  background: cyan;
   display: flex;
   flex-direction: column;
   vertical-align: middle;
@@ -115,7 +110,6 @@ a:focus {
 
 .service-item {
   height: 100%;
-  background: chartreuse;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -170,5 +164,94 @@ a:focus {
   line-height: 26px;
   margin: 0 0 15px 0;
 }
+.container-services-mobile {
+  display: none;
+}
 @media (max-width: 600px) {
+  .container-services {
+    display: none;
+  }
+  .container-services-mobile {
+    display: block;
+    padding: 20px 5px 20px 5px;
+  }
+
+  .container-grid-main-mobile {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  .service-item-icon-mobile {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .container-grid-main-mobile :hover:focus {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+  }
+
+  .container-grid-main-mobile:hover:before {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-grid-main-mobile:hover:after {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-grid-main-mobile:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 60px;
+    border-left: 2px solid #00bfe7;
+    border-top: 2px solid #00bfe7;
+    content: "";
+    z-index: -1;
+    -webkit-transition: all, 0.7s;
+    -o-transition: all, 0.7s;
+    transition: all, 0.7s;
+  }
+
+  .container-grid-main-mobile:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    width: 60px;
+    border-right: 2px solid #00bfe7;
+    border-bottom: 2px solid #00bfe7;
+    content: "";
+    z-index: -1;
+    -webkit-transition: all, 0.7s;
+    -o-transition: all, 0.7s;
+    transition: all, 0.7s;
+  }
+
+  .container-grid-main-mobile h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 18px;
+  }
+
+  .container-grid-main-mobile p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+  }
 }

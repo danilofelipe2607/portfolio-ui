@@ -5,7 +5,6 @@ export default function ListVideos() {
     "https://www.youtube.com/embed/NxXPbXMYAe8",
     "https://www.youtube.com/embed/NxXPbXMYAe8",
     "https://www.youtube.com/embed/NxXPbXMYAe8",
-    "https://www.youtube.com/embed/NxXPbXMYAe8",
   ];
   return (
     <div className="container-list-videos">
