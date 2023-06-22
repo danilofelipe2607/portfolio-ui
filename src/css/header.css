@@ -81,6 +81,11 @@ header {
 }
 
 @media (max-width: 600px) {
+
+  header{
+    justify-content: space-around;
+
+  }
   .rede-sociais {
     display: none;
   }

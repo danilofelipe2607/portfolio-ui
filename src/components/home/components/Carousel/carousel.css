@@ -1,30 +1,40 @@
 .container-carousel {
-  padding-top: 40px;
   display: flex;
-  width: 100%;
-  height: 900px;
-  background: chartreuse;
+  flex-direction: column;
+  width: 80%;
+  height: 1400px;
+  background: #131212;
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 20px;
+}
+
+.container-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .description {
   width: 30%;
-  height: 450px;
-  background: #4ec9e1;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  background: rgb(252, 9, 9);
+  border-radius: 80px;
 }
 .banner-carousel {
   height: 450px;
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: crimson;
 }
 .description h2 {
   text-align: center;
@@ -55,4 +65,260 @@
   height: 100%;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lobster");
+.profile {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.img-profile {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  padding: 10px;
+}
+
+.img-profile img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-description {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-description h2 {
+  font-size: 32px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+}
+.profile-description p {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 20px 0 60px 0;
+  text-align: center;
+}
+.profile-description a {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  padding: 14px 32px 12px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-description a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+
+.profile-description a:hover:before {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-description a:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-description a:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-left: 2px solid #00bfe7;
+  border-top: 2px solid #00bfe7;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
+
+.profile-description a:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+  border-right: 2px solid #00bfe7;
+  border-bottom: 2px solid #00bfe7;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
+
+/*comentario */
+.coment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.coment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  margin-top: 20px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.coment h5 {
+  color: #ffffff;
+  margin: 10px 0 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+.elementor-star-rating i {
+  display: inline-block;
+  position: relative;
+  font-style: normal;
+  cursor: default;
+  font-size: 16px;
+  text-align: center;
+}
+.icon-start {
+  font-size: 16px;
+  text-align: center;
+  color: #f0ad4e;
+}
+.coment p {
+  width: 50%;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #adadad;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 20px 0 20px 0;
+}
+
+@media (max-width: 600px) {
+  .container-carousel {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+  }
+  .container-main {
+    width: 100%;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .description {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(252, 9, 9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .description h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .description button {
+    font-size: 16px;
+    width: 120px;
+    height: 35px;
+  }
+  .description button:hover {
+    border-radius: 20px;
+    color: #61ce70;
+    background: #ffffff;
+    width: 120px;
+    height: 35px;
+  }
+  .banner-carousel {
+    display: none;
+  }
+  .banner-img {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .profile {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: chocolate;
+  }
+
+  .profile-description {
+    margin: 10px;
+    width: 90%;
+  }
+  .img-profile {
+    display: none;
+  }
+  .profile h2 {
+    font-size: 28px;
+  }
+
+  .profile p {
+    max-width: 25ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .coment-container {
+    background: red;
+    width: 100%;
+    height: 100%;
+
+  }
+}

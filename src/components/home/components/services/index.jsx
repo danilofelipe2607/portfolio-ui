@@ -84,7 +84,7 @@ export default function Services() {
               profissional de vídeo para fazer um vídeo personalizado para o seu
               negócio e, assim que o projeto estiver concluído
             </p>
-            <a>Ver todos os serviços</a>
+            <a href="/teste">Ver todos os serviços</a>
           </div>
         </div>
       </div>

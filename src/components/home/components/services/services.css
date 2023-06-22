@@ -172,21 +172,23 @@ a:focus {
     display: none;
   }
   .container-services-mobile {
-    display: block;
-    padding: 20px 5px 20px 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .container-grid-main-mobile {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    margin: 10px;
     text-align: center;
     color: #fff;
+    flex-wrap: wrap;
     position: relative;
     z-index: 1;
+    margin-bottom: 20px;
   }
   .service-item-icon-mobile {
     padding: 15px;
@@ -240,18 +242,35 @@ a:focus {
     -o-transition: all, 0.7s;
     transition: all, 0.7s;
   }
+  .container-grid-main-mobile div {
+    margin: 10px;
+  }
+
 
   .container-grid-main-mobile h2 {
     font-size: 22px;
     font-weight: 700;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 18px;
   }
 
   .container-grid-main-mobile p {
+    text-align: center;
     font-size: 16px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
-    margin: 0 0 15px 0;
+    margin: 15px;
+  }
+
+  .container-grid-main-mobile a {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    margin: 15px;
+    color: #ffffff;
+  }
+  .container-grid-main-mobile a:hover {
+    color: red;
   }
 }
